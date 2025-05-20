@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap");
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --dark-yellow: hsl(47, 88%, 63%);
+    --grey-500: hsl(0, 0%, 42%);
+    --grey-900: hsl(0, 0%, 7%);
+}
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: var(--dark-yellow);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-card {
+    max-width: clamp(240px, 80vw, 325px);
+    background-color: var(--color-white);
+    padding: 1em;
+    border-radius: 1.25rem;
+    border: 1px solid var(--grey-900);
+    box-shadow: 0.625rem 0.625rem;
+}
+
+.blog-card__details-wrapper {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card__image-wrapper {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-bottom: 1.25em;
+}
+.blog-card__image {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (width > 20rem) {
+    .blog-card {
+        width: 100%;
+    }
+    .blog-card__image {
+        width: 100%;
+    }
+}
+.blog-card__tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+.blog-card__tag {
+    background-color: var(--dark-yellow);
+    padding: 0.25em 1.125em;
+    font-weight: 800;
+    border-radius: 0.25rem;
+    margin-block: 0.75em;
+}
+.blog-card__published-information {
+    font-weight: 500;
+    margin-block: 0.25em 0.75em;
+}
+.blog-card__heading {
+    color: var(--grey-900);
+    font-weight: 800;
+    font-size: clamp(1.25rem, 7vw + 0.5rem, 1.5rem);
+    margin-block: 0.25em 0.75em;
+}
+.blog-card__heading:hover {
+    cursor: pointer;
+    color: var(--dark-yellow);
+}
+.blog-card__information {
+    color: var(--grey-500);
+    font-weight: 450;
+    font-size: clamp(0.75rem, 7vw + 0.5rem, 0.935rem);
+    margin-block-end: 1.5em;
+}
+
+.blog-card__owner-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.blog-card_owner-image {
+    max-width: 2.75rem;
+}
+.blog-card__owner-name {
+    font-weight: 800;
+    font-size: 1.125rem;
+}
+.attribution__wrapper {
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+.attribution {
+    font-size: 13px;
+}
+.attribution a {
+    color: var(--grey-500);
+}
+.attribution a:hover {
+    color: var(--grey-900);
+}

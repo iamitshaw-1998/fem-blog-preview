@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Amit Shaw" />
+        <meta name="keywords" content="Frontend Mentor, HTML, CSS" />
+        <meta
+            name="description"
+            content="Frontend Mentor - Blog preview card Challenge Solution"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./public/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | Blog preview card</title>
+        <link rel="stylesheet" href="./src/reset.css" />
+        <link rel="stylesheet" href="./src/style.css" />
+    </head>
+    <body>
+        <main>
+            <article class="blog-card">
+                <section class="blog-card__details-wrapper">
+                    <figure class="blog-card__image-wrapper">
+                        <img
+                            class="blog-card__image"
+                            src="./public/illustration-article.svg"
+                            alt="Illustration for the article"
+                        />
+                    </figure>
+                    <section
+                        class="blog-card__tags-wrapper"
+                        aria-label="Blog tags"
+                    >
+                        <span class="blog-card__tag">Learning</span>
+                    </section>
+                    <p class="blog-card__published-information">
+                        Published <time datetime="2023-12-21">21 Dec 2023</time>
+                    </p>
+                    <h1 class="blog-card__heading">HTML & CSS foundations</h1>
+                    <p class="blog-card__information">
+                        These languages are the backbone of every website,
+                        defining structure, content, and presentation.
+                    </p>
+                    <figure class="blog-card__owner-info-wrapper">
+                        <div class="blog-card__owner-image-wrapper">
+                            <img
+                                class="blog-card_owner-image"
+                                src="./public/image-avatar.webp"
+                                alt="Avatar of Greg Hooper"
+                            />
+                        </div>
+                        <figcaption class="blog-card__owner-name">
+                            Greg Hooper
+                        </figcaption>
+                    </figure>
+                </section>
+            </article>
+        </main>
+        <footer class="attribution__wrapper">
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Frontend Mentor Challenge"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a
+                    href="https://github.com/iamitshaw-007/blog-card-challenge"
+                    aria-label="Coded by Amit Shaw"
+                >
+                    Amit Shaw </a
+                >.
+            </div>
+        </footer>
+    </body>
+</html>
