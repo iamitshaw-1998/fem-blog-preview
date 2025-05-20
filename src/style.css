@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap");
-
 :root {
     --color-white: hsl(0, 0%, 100%);
     --dark-yellow: hsl(47, 88%, 63%);
     --grey-500: hsl(0, 0%, 42%);
     --grey-900: hsl(0, 0%, 7%);
 }
-body {
+main {
     font-family: "Figtree", sans-serif;
     background-color: var(--dark-yellow);
     min-height: 100vh;
@@ -17,12 +15,12 @@ body {
 }
 
 .blog-card {
-    max-width: clamp(240px, 80vw, 325px);
+    max-width: clamp(15rem, 80vw, 20rem);
     background-color: var(--color-white);
     padding: 1em;
-    border-radius: 1.25rem;
+    border-radius: 1.25em;
     border: 1px solid var(--grey-900);
-    box-shadow: 0.625rem 0.625rem;
+    box-shadow: 0.625em 0.625em;
 }
 
 .blog-card__details-wrapper {
@@ -32,7 +30,7 @@ body {
 }
 
 .blog-card__image-wrapper {
-    border-radius: 0.75rem;
+    border-radius: 0.75em;
     overflow: hidden;
     margin-bottom: 1.25em;
 }
@@ -41,12 +39,14 @@ body {
     object-fit: contain;
 }
 
-@media screen and (width > 20rem) {
-    .blog-card {
-        width: 100%;
+@media screen and (width <= 15rem) {
+    main {
+        justify-content: flex-start;
     }
-    .blog-card__image {
-        width: 100%;
+    .blog-card {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
     }
 }
 .blog-card__tags-wrapper {
@@ -69,7 +69,7 @@ body {
 .blog-card__heading {
     color: var(--grey-900);
     font-weight: 800;
-    font-size: clamp(1.25rem, 7vw + 0.5rem, 1.5rem);
+    font-size: clamp(1.25em, 7vw + 0.5rem, 1.5em);
     margin-block: 0.25em 0.75em;
 }
 .blog-card__heading:hover {
@@ -79,7 +79,7 @@ body {
 .blog-card__information {
     color: var(--grey-500);
     font-weight: 450;
-    font-size: clamp(0.75rem, 7vw + 0.5rem, 0.935rem);
+    font-size: clamp(0.75rem, 7vw + 0.5rem, 1rem);
     margin-block-end: 1.5em;
 }
 
@@ -93,12 +93,11 @@ body {
 }
 .blog-card__owner-name {
     font-weight: 800;
-    font-size: 1.125rem;
+    font-size: clamp(0.875em, 7vw + 0.5em, 1.125em);
 }
 .attribution__wrapper {
     text-align: center;
-    position: relative;
-    top: 5rem;
+    margin-block-start: 1.5rem;
 }
 .attribution {
     font-size: 13px;
