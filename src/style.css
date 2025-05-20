@@ -32,7 +32,7 @@ main {
 .blog-card__image-wrapper {
     border-radius: 0.75em;
     overflow: hidden;
-    margin-bottom: 1.25em;
+    margin-block-end: 1.25em;
 }
 .blog-card__image {
     max-width: 100%;
@@ -103,7 +103,7 @@ main {
     margin-block-start: 1.5rem;
 }
 .attribution {
-    font-size: 13px;
+    font-size: 0.75rem;
 }
 .attribution a {
     color: var(--grey-500);
