@@ -76,6 +76,9 @@ main {
     cursor: pointer;
     color: var(--dark-yellow);
 }
+.blog-card__heading--nowrap {
+    white-space: nowrap;
+}
 .blog-card__information {
     color: var(--grey-500);
     font-weight: 450;
@@ -93,7 +96,7 @@ main {
 }
 .blog-card__owner-name {
     font-weight: 800;
-    font-size: clamp(0.875em, 7vw + 0.5em, 1.125em);
+    font-size: clamp(0.75em, 7vw + 0.5em, 1em);
 }
 .attribution__wrapper {
     text-align: center;
